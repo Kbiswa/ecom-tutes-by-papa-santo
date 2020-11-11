@@ -1,0 +1,30 @@
+@import './variables';
+
+.product-slider {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 4rem;
+   
+    &__title{
+        display: block;
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    &__underline{
+        display: block;
+        margin-top: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+        border-bottom: 1px solid rgba($color-black, .15);
+        width: 70%;
+    }
+
+    &__container{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 16fr 1fr;
+    }
+}
